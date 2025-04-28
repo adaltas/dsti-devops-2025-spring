@@ -1,7 +1,6 @@
-
 # Lab
 
-Implementing DevOps to IT companies is starting from writing a clean and high-quality source code as well as its documentation. The goal of the lab is to learn the proper way of creating an IT project following best practices. 
+Implementing DevOps to IT companies is starting from writing a clean and high-quality source code as well as its documentation. The goal of the lab is to learn the proper way of creating an IT project following best practices.
 
 As an example of programming language, we will use JavaScript with its server-side runtime - [Node.js](https://nodejs.org/en/). It is one of the most popular languages for developing various types of applications, and it's very easy to get started with.
 
@@ -22,13 +21,16 @@ As result, you will achieve creation a documented project on Node.js of a simple
 
 1. Install an **IDE or a text editor**, for example [VS Code](https://code.visualstudio.com/).
 2. Install **Git**, use for installation:
-  - Windows: https://gitforwindows.org/
-  - Linux: https://git-scm.com/download/linux
-  - macOS: https://git-scm.com/download/mac   
+
+- Windows: https://gitforwindows.org/
+- Linux: https://git-scm.com/download/linux
+- macOS: https://git-scm.com/download/mac
+
 3. Install **Node.js**: https://nodejs.org/
 4. Open a command-line interface:
-  - macOS or Linux: use **Terminal**
-  - Windows: use **Git Bash** (should be installed when installing Git). **Note!** Don't use default *CMD.exe*, because it has different commands from a command line of the Linux OS, which is used in most IT environments.
+
+- macOS or Linux: use **Terminal**
+- Windows: use **Git Bash** (should be installed when installing Git). **Note!** Don't use default _CMD.exe_, because it has different commands from a command line of the Linux OS, which is used in most IT environments.
 
 ## 1. Start a project
 
@@ -38,7 +40,7 @@ As result, you will achieve creation a documented project on Node.js of a simple
 
 Example:
 
-```bash 
+```bash
 cd ~/path/to/your-root-project-directory
 ```
 
@@ -66,8 +68,8 @@ git init
 
 4. Go on github.com, login or create account at [GitHub](https://www.github.com)
 
-5. Create a new project, name it as your previous project directory.
-DO NOT INITIALIZE REPO with README.md, let it empty
+5. Create a new [repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories), name it as your previous project directory.
+   DO NOT INITIALIZE REPO with README.md, let it empty
 
 6. Copy git repo address, that should be something like: git@github.com:YOUR_GITHUB_USERNAME/YOUR_PROJECT.git
 
@@ -76,13 +78,15 @@ DO NOT INITIALIZE REPO with README.md, let it empty
 ```bash
 ls -l ~/.ssh
 ```
+
 That should list your ssh keys
+
 ```
 authorized_keys   config           id_rsa.pub
 id_ed25519        known_hosts      id_ed25519.pub
 ```
 
-An SSH key has two files: 
+An SSH key has two files:
 keyname
 keyname.pub
 
@@ -93,6 +97,7 @@ If you don't have any of these, create an ssh key (ed25519 recommended)
 ```bash
 ssh-keygen -t ed25519
 ```
+
 Type enter anytime required, do not insert password
 
 Copy content of your .PUB file, here id_ed25519.pub
@@ -101,6 +106,7 @@ Go on GitHub.com, Settings, SSH and GPG Keys, then paste content of your
 public key
 
 8. On the terminal, type:
+
 ```
 git remote add origin git@github.com:YOUR_GITHUB_USERNAME/YOUR_PROJECT.git
 ```
@@ -112,9 +118,11 @@ git remote add origin git@github.com:YOUR_GITHUB_USERNAME/YOUR_PROJECT.git
 ```bash
 npm init -y
 ```
+
 This will create an initial `package.json` file with the package (Node.js project) description. Later, you can manually modify the content respecting the [JSON format](https://en.wikipedia.org/wiki/JSON). For example, these values:
-  - `author`
-  - `description`
+
+- `author`
+- `description`
 
 [Read more about Node.js packages and modules](https://docs.npmjs.com/about-packages-and-modules)
 
@@ -130,9 +138,9 @@ npm test
 
 It will run the bash script `echo \"Error: no test specified\" && exit 1` defined in the `package.json` file, which outputs the string `Error: no test specified` to stdout.
 
-## 3. Create a Node.js script 
+## 3. Create a Node.js script
 
-Now, we start using a text editor or IDE (Atom, VS Code, WebStorm, or up to your choice). 
+Now, we start using a text editor or IDE (Atom, VS Code, WebStorm, or up to your choice).
 
 1. Open a project folder in your editor.
 
@@ -146,8 +154,8 @@ code .
 2. Create a file `index.js` with the following content:
 
 ```js
-str = "Hello Node.js!"
-console.log(str)
+str = "Hello Node.js!";
+console.log(str);
 ```
 
 3. Run the Node.js script in the terminal:
@@ -196,34 +204,34 @@ Also, this command will add a dependency to your `package.json` like:
 "dependencies": {
     "express": "^4.17.1"
   }
-...  
-``` 
+...
+```
 
 It is a Node.js (actually NPM) "feature" to let developers install all the necessary packages for the current project using just one single command, instead of installing each package repeating such a command like `npm install PACKAGE_NAME`. You can experiment with it by removing the entire `node_modules` folder and running the `npm install` command.
 
 2. Modify the `index.js` file with the following content:
 
 ```js
-const express = require('express')
+const express = require("express");
 
-const app = express()
-const port = 3000
+const app = express();
+const port = 3000;
 
-app.get('/', (req, res) => {
-  res.send('Hello world!')
-})
+app.get("/", (req, res) => {
+  res.send("Hello world!");
+});
 
 module.exports = app.listen(port, (err) => {
-  if (err) throw err
-  console.log("Server listening the port " + port)
-})
+  if (err) throw err;
+  console.log("Server listening the port " + port);
+});
 ```
 
 3. Run the NPM `start` script like in the previous step.
 
 ## 5. Create a `CHANGELOG.md` file
 
-`CHANGELOG.md` is a file that describes the evolution of the project. All notable changes will be documented in this file. 
+`CHANGELOG.md` is a file that describes the evolution of the project. All notable changes will be documented in this file.
 
 [Read more about CHANGELOG](https://keepachangelog.com/en/1.0.0/)
 
@@ -240,7 +248,7 @@ module.exports = app.listen(port, (err) => {
 - Initialize a project
 ```
 
-Since now, when working on the project you will be constantly updating it. 
+Since now, when working on the project you will be constantly updating it.
 
 ## 6. Describe the project in the `README.md` file
 
@@ -249,7 +257,7 @@ You may take inspiration for what to write in a `README.md` file from any [Adalt
 Also, you can refer to [this documentation](https://www.makeareadme.com/) to learn more.
 
 1. Create a `README.md` file and describe the project with information such as:
-  
+
 - Short description
 - List of functionalities
 - Installation instructions
