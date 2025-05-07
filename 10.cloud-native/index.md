@@ -16,16 +16,16 @@ Cloud-native is a term used to describe container-based environments. Cloud-nati
 
 ## Cloud advantages
 
-- **Flexibility and agility**   
+- **Flexibility and agility**  
   Cloud computing makes it easy to quickly scale up/down the capacity.
-- **Security**   
+- **Security**  
   Implement effective disaster recovery solutions without large, upfront investments.
-- **Automatic software and hardware updates**   
+- **Automatic software and hardware updates**  
   The servers are maintained by your supplier.
 - **Saves money on hardware, “pay as you go”**
-- **Increased collaboration**   
+- **Increased collaboration**  
   Team members can work anywhere.
-- **Сompetitive advantage**   
+- **Сompetitive advantage**  
   Small businesses have access to enterprise-class technology they couldn’t afford on their own.
 
 [Read more](https://www.pointclick.net/moving-to-the-cloud/)
@@ -39,11 +39,12 @@ Cloud-native is a term used to describe container-based environments. Cloud-nati
 
 Match services yourself: DigitalOcean, Wix, Heroku, Shopify, Amazon Web Services (AWS), Salesforce, Google Cloud Platform (GCP), GitHub, Youtube, GitLab, Travis CI, IBM cloud, Trello.
 
-[Read more](https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/_)
+[Read more](https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/)
 
 ## Cloud-native applications
 
 Cloud-native applications are:
+
 - a collection of small, independent, and loosely coupled services
 - providing a consistent development and automated management
 - designed to run in the cloud.
@@ -60,8 +61,8 @@ Cloud-native applications are:
 5. **Architected** with a clean separation of **stateless and stateful** services
 6. **Isolated** from the server and operating system dependencies
 7. **Deployed** on self-service, elastic, cloud infrastructure
-8. **Managed** through agile DevOps processes   
-  Each service has an independent life cycle and CI/CD.
+8. **Managed** through agile DevOps processes  
+   Each service has an independent life cycle and CI/CD.
 9. **Automated** capabilities
 10. Defined, policy-driven resource allocation
 
@@ -86,17 +87,17 @@ Cloud-native applications are:
 
 1. Your SOA (service-oriented architecture) cut into services
 
-2. Anything involving a large framework   
-  What part of "micro" are folks missing?
+2. Anything involving a large framework  
+   What part of "micro" are folks missing?
 
-3. Development patterns where you deploy things into containers   
-  You want containers,  do containers. Fine with me. Deployment decisions have nothing to do with microservices. If you're coupling your code to the architecture that tightly, re-read #2.
-  
-4. Things with some cool language   
-  Once again, if you like cool languages, use them. Sounds fun. It's just has nothing to do with microservices.
-  
+3. Development patterns where you deploy things into containers  
+   You want containers, do containers. Fine with me. Deployment decisions have nothing to do with microservices. If you're coupling your code to the architecture that tightly, re-read #2.
+
+4. Things with some cool language  
+   Once again, if you like cool languages, use them. Sounds fun. It's just has nothing to do with microservices.
+
 5. Systems with thousands of little tiny pieces of code scattered all over the place making it impossible to reason about anything
-  You're loving the idea to death. You've gone too far the other way. Both the "micro" and "service" part are equally important.
+   You're loving the idea to death. You've gone too far the other way. Both the "micro" and "service" part are equally important.
 
 [Reference](https://danielbmarkham.com/honest-microservices/)
 
@@ -110,10 +111,10 @@ Cloud-native applications are:
 
 **Provides:**
 
-  - Connection between microservices
-  - Monitoring, observability into communications
-  - Securing
-  - Managing
+- Connection between microservices
+- Monitoring, observability into communications
+- Securing
+- Managing
 
 ![Service mesh](image/service-mesh.jpg)
 
@@ -123,14 +124,14 @@ Cloud-native applications are:
 
 Platforms implementing service mesh:
 
-  - **Istio**
-  - Consul
-  - Linkerd
+- **Istio**
+- Consul
+- Linkerd
 
 ### Service mesh: example
 
 ![Service mesh example](image/sm-bookinfo.jpg)
-  
+
 ## Service mesh: real large examples
 
 ![Real big service mesh examples](image/sm-amazon-netflix.jpg)
@@ -155,4 +156,4 @@ Istio provides operational requirements:
 
 ---
 
-*The content of this document, including all text, images, and associated materials, is the exclusive property of Adaltas and is protected by applicable copyright laws. Unauthorized distribution, reproduction, or sharing of this content, in whole or in part, is strictly prohibited without the express written consent of the author(s). Any violation of this restriction may result in legal action and the imposition of penalties as prescribed by law.*
+_The content of this document, including all text, images, and associated materials, is the exclusive property of Adaltas and is protected by applicable copyright laws. Unauthorized distribution, reproduction, or sharing of this content, in whole or in part, is strictly prohibited without the express written consent of the author(s). Any violation of this restriction may result in legal action and the imposition of penalties as prescribed by law._
