@@ -1,4 +1,3 @@
-
 # Lab
 
 The goal of this lab is to use Prometheus with Istio to record metrics that track the health of Istio and of applications within the service mesh. You will also visualize metrics using tools like Grafana and Kiali.
@@ -35,8 +34,10 @@ Instructions - https://istio.io/docs/setup/getting-started/. (Do everything unti
 
 ## 2. Install and use Prometheus
 
-Instructions - https://istio.io/latest/docs/ops/integrations/prometheus/
+Instructions - https://istio.io/latest/docs/ops/integrations/prometheus/  
+Instruction - https://istio.io/latest/docs/tasks/observability/metrics/querying-metrics/
 
 ## 3. Install and use Grafana
 
-Instruction - https://istio.io/latest/docs/ops/integrations/grafana/
+Instruction - https://istio.io/latest/docs/ops/integrations/grafana/  
+Instruction - https://istio.io/latest/docs/tasks/observability/metrics/using-istio-dashboard/
